@@ -1,0 +1,8 @@
+<div class="comic">
+    <div *ngFor="let products of productList" > <!-- he creado my funcion pordcutLisr en service -->
+      <h4> {{products.title}} </h4>
+      <img src="{{products.image}}" alt="{{products.title}}">
+      <button routerLink="/products/{{products.id}}">ver MÁS</button>
+    </div>  
+    
+    </div>

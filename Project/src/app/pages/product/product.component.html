@@ -1,0 +1,10 @@
+<p>product works!</p>
+<div> <!-- aquie no hace falta bucle para recorrle ( *ngFor), porque tenemos un objeto , lo llamamos directamente  --> 
+    <h4> {{product?.name}} </h4> <!--le pongo la interrogacion "?" para que no de errir  --> 
+       <!-- con la ? decumos que puede que esté o no pero te llegará en ñagun momento   -->
+   
+       <img src="{{product?.image}} "  alt="{{product?.name}}">
+       <p>Authorr : {{product?.price}}</p>
+       <p>Company : {{product?.stars}}</p>
+       <button routerLink="/">Ir atrás</button>  
+   </div>
